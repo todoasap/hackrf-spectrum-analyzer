@@ -286,6 +286,8 @@ public class HackRFSweepSpectrumAnalyzer implements HackRFSettings, HackRFSweepD
 			parameterFFTBinHz.setValue(500000);
 			parameterFrequencyAllocationTable.setValue(new FrequencyAllocations().getTable().values().stream().findFirst().get());
 		}
+		
+		//parameterFrequency.setValue(new FrequencyRange(666, 1000));
 
 		recalculateGains(parameterGainTotal.getValue());
 
